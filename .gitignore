@@ -1,0 +1,5 @@
+build
+.gradle
+.idea
+generated-file-openHtmlToPdf.pdf
+generated-file-openpdf.pdf
