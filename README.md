@@ -2,7 +2,7 @@
 This is the POC for the two tools we analysed for the comparative analysis to generate PDF from HTML.
 
 #Language used
-Kotlin
+java
 
 #Build Tool 
 Gradle
