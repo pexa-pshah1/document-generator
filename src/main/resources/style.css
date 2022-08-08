@@ -1,0 +1,111 @@
+.h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 14.0pt;
+    font-weight: normal;
+    text-align: center;
+    margin: 0cm;
+}
+
+.body {
+    font-family: "Arial", sans-serif;
+    font-size: 11.0pt;
+    font-weight: normal;
+    text-align: left;
+    margin: 0cm;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px 6px 3px 6px;
+    vertical-align: top;
+    word-wrap: break-word;
+    width: 25%;
+}
+
+.emptyDiv {
+    margin: 20px;
+}
+
+/*.tableheaderrow {
+    height: 17.0pt;
+}
+
+.tableheadercell {
+    width: 524.5pt;
+    border: solid windowtext 1.0pt;
+    padding: 2.85pt 5.4pt 2.85pt 5.4pt;
+    height: 17.0pt;
+}
+
+.tablerow {
+    height: 14.2pt;
+}
+
+.tablecell {
+    border: solid windowtext 1.0pt;
+    border-top: none;
+    padding: 2.85pt 5.4pt 2.85pt 5.4pt;
+    height: 14.2pt;
+}*/
+
+#footer {
+    display: block;
+    position: running(footer);
+    text-align: center;
+}
+
+#header {
+    display: block;
+    position: running(header);
+    text-align: right;
+}
+
+@page {
+    size: A4 portrait;
+    margin: 1.5cm 0.65cm;
+
+    /* headers*/
+    @top-left {
+        content: "";
+    }
+
+    @top-center {
+        content: "";
+    }
+
+    @top-right {
+        content: element(header)
+    }
+
+    /* footers */
+    @bottom-left {
+        content: "Reference:";
+    }
+
+    @bottom-center {
+        content: element(footer);
+        line-height: 1.5em;
+        height: 3em;
+        overflow: hidden;
+        width: 50%;
+    }
+
+    @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+    }
+}

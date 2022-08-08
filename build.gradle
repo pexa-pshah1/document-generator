@@ -16,6 +16,9 @@ dependencies {
     implementation 'org.xhtmlrenderer:flying-saucer-pdf-openpdf:9.1.11'
     implementation 'com.openhtmltopdf:openhtmltopdf-parent:1.0.7'
     implementation 'com.openhtmltopdf:openhtmltopdf-pdfbox:0.0.1-RC7'
+    implementation 'org.freemarker:freemarker:2.3.31'
+    implementation 'org.springframework:spring-context-support:5.3.22'
+
 
 }
 
